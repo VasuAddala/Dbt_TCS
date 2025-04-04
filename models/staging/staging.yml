@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: staging layer for customers data
+    columns:
+      - name: customer_id
+        description: primary id of the model
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: customer id
+      - name: address
+        description: address of the customer
+      - name: nation_id
+        description: foreign id to stg_nations
+      - name: phone_number
+        description: phone number of the customer
+      - name: account_balance
+        description: total account balance from the customer
+      - name: market_segment
+        description: market segment of the customer
+      - name: comment
+        description: Hi  
+     

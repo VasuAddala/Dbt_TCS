@@ -1,0 +1,8 @@
+{% set tools = ['dbt','snowflake','Informatica','Databricks','AWS'] %}
+{% for a in tools%}
+I do training on {{a}}
+{% if loop.last %} "That's it" 
+{% else %}
+and
+{% endif %}
+{% endfor %}

@@ -1,0 +1,16 @@
+{% set cname='Vasu Addala' %}
+
+{% set city='Bhimavaram' %}
+{#
+
+{% set code='534201' %}
+#}
+
+Iam your trainer      {{ cname}} from {{city}} and {{code}}
+
+{% set tools = ['dbt','snowflake','Informatica','Databricks','AWS'] %}
+
+{{tools}}
+
+{{tools[0]}} and {{tools[4]}}
+
